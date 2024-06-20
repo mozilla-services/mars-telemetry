@@ -1,0 +1,310 @@
+# Any copyright is dedicated to the Public Domain.
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+---
+$schema: moz://mozilla.org/schemas/glean/metrics/2-0-0
+
+ad:
+  interaction:
+    type: string
+    description: |
+      The type of ad interaction (e.g. impression, click, ...).  Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  advertiser:
+    type: string
+    description: |
+      Advertiser associated with the ad.  Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  id:
+    type: string
+    description: |
+      Advertiser/partner provided identifier for a specific ad.  May be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  provider:
+    type: string
+    description: |
+      The external service providing the ad.  Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  product:
+    type: string
+    description: |
+      The category of ad requested by the client. (e.g. tiles, native, banner, carousel, video).  Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  format:
+    type: string
+    description: |
+      Format of the ad which satisfied the requested placement.  More than one format can map to one product.  Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  country_code:
+    type: string
+    description: |
+      Country code associated with the client when the ad was requested.  Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  region_code:
+    type: string
+    description: |
+      Region code associated with the client when the ad was requested.  May be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+ad_client:
+  context_id:
+    type: string
+    description: A unique identifier representing an application user; provided by the client.  Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  placement:
+    type: string
+    description: |
+      Value identifying the surface; provided by the client when requesting an ad (e.g. newtab). Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  placement_id:
+    type: string
+    description: |
+      Unique identifer representing an instance of a placement (e.g. newtab_visit_id).  May be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  position:
+    type: string
+    description: |
+      Supplied by the client if position within the placement is relevant (e.g. "1", "2", "top", "left-side").  May be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  form_factor:
+    type: string
+    description: |
+      Form factor of the device displaying the ad (e.g. desktop, mobile). Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  os:
+    type: string
+    description: |
+      OS of the device displaying the ad.  May be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+interaction:
+  kevel:
+    type: event
+    description: >
+      Captures specific Kevel fields.
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    notification_emails:
+      - gleonard@mozilla.com
+    expires: never
+    extra_keys:
+      flight_id:
+        description: >
+          Flight Id defined in Kevel metadata.
+        type: string
+  amp:
+    type: event
+    description: >
+      Captures specific AMP fields.
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    notification_emails:
+      - gleonard@mozilla.com
+    expires: never
+
+technical_operations:
+  user_agent:
+    type: string
+    description: >
+      User agent of the client.  Used for error investigation only, no analytics value.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  served_timestamp:
+    type: datetime
+    description: >
+      Timestamp indicating when the ad was served by the Unified API to client.  This timestamp along with fetched_timestamp indicates the freshness of the ad.  If the ad is not cached on the server these two timestamps will differ by milliseconds. Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  fetched_timestamp:
+    type: datetime
+    description: >
+      Timestamp indicating when the ad was fetched from the demand_source by the Unified API.  This timestamp along with served_timestamp indicates the freshness of the ad.  If the ad is not cached on the server these two timestamps will differ by milliseconds. Should not be null.
+    lifetime: application
+    send_in_pings:
+      - events
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
