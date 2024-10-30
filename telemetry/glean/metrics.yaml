@@ -315,9 +315,9 @@ technical_operations:
       - dmueller@mozilla.com
     bugs:
       - https://mozilla-hub.atlassian.net/browse/AE-577
-      - http://bugzilla.mozilla.org/TODO
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     data_reviews:
-      - http://bugzilla.mozilla.org/TODO
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     expires: never
 
   count_requested:
@@ -332,9 +332,9 @@ technical_operations:
       - dmueller@mozilla.com
     bugs:
       - https://mozilla-hub.atlassian.net/browse/AE-577
-      - http://bugzilla.mozilla.org/TODO
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     data_reviews:
-      - http://bugzilla.mozilla.org/TODO
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     expires: never
 
   count_returned:
@@ -349,9 +349,9 @@ technical_operations:
       - dmueller@mozilla.com
     bugs:
       - https://mozilla-hub.atlassian.net/browse/AE-577
-      - http://bugzilla.mozilla.org/TODO
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     data_reviews:
-      - http://bugzilla.mozilla.org/TODO
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     expires: never
 
   count_filtered:
@@ -367,7 +367,7 @@ technical_operations:
       - dmueller@mozilla.com
     bugs:
       - https://mozilla-hub.atlassian.net/browse/AE-577
-      - http://bugzilla.mozilla.org/TODO
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     data_reviews:
-      - http://bugzilla.mozilla.org/TODO
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     expires: never
