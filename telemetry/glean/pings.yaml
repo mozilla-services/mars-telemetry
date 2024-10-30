@@ -18,21 +18,9 @@ request-stats:
   data_reviews:
     - http://bugzilla.mozilla.org/TODO
 
-kevel-interaction:
+interaction:
   description: >
-    Ad interaction with a Kevel supplied ad.
-  include_client_id: false
-  notification_emails:
-    - dmueller@mozilla.com
-  bugs:
-    - https://mozilla-hub.atlassian.net/browse/AE-577
-    - http://bugzilla.mozilla.org/TODO
-  data_reviews:
-    - http://bugzilla.mozilla.org/TODO
-
-amp-interaction:
-  description: >
-    Ad interaction with an AMP supplied ad.
+    Ad interaction with an ad.
   include_client_id: false
   notification_emails:
     - dmueller@mozilla.com
