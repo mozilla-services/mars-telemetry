@@ -12,6 +12,7 @@ ad:
       null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
@@ -28,6 +29,7 @@ ad:
       Advertiser associated with the ad.  Should not be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
@@ -44,23 +46,7 @@ ad:
       Advertiser/partner provided identifier for a specific ad.  May be null.
     lifetime: application
     send_in_pings:
-      - interaction
-    notification_emails:
-      - gleonard@mozilla.com
-    bugs:
-      - https://mozilla-hub.atlassian.net/browse/AE-355
-      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
-    data_reviews:
-      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
-    expires: never
-
-  flight_id:
-    type: string
-    description: >
-      Flight Id defined in Kevel metadata.  Will be null if interaction is
-      not from a Kevel supplied ad.
-    lifetime: application
-    send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
@@ -77,6 +63,7 @@ ad:
       The external service providing the ad.  Should not be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
@@ -94,6 +81,7 @@ ad:
       carousel, video).  Should not be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
@@ -111,6 +99,7 @@ ad:
       format can map to one product.  Should not be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
@@ -146,8 +135,26 @@ ad:
       be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
       - request-stats
+    notification_emails:
+      - gleonard@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  flight_id:
+    type: string
+    description: >
+      Flight Id defined in Kevel metadata.  Will be null if interaction is
+      not from a Kevel supplied ad.
+    lifetime: application
+    send_in_pings:
+      - interaction
     notification_emails:
       - gleonard@mozilla.com
     bugs:
@@ -165,6 +172,7 @@ ad_client:
       client.  Should not be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
@@ -182,6 +190,7 @@ ad_client:
       ad (e.g. newtab). Should not be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
       - request-stats
     notification_emails:
@@ -200,6 +209,7 @@ ad_client:
       (e.g. "1", "2", "top", "left-side").  May be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
@@ -217,6 +227,7 @@ ad_client:
       Should not be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
       - request-stats
     notification_emails:
@@ -234,6 +245,7 @@ ad_client:
       OS of the device displaying the ad.  May be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
@@ -244,6 +256,37 @@ ad_client:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     expires: never
 
+interaction:
+  kevel:
+    type: event
+    description: >
+      Captures specific Kevel fields.
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    notification_emails:
+      - gleonard@mozilla.com
+    expires: never
+    extra_keys:
+      flight_id:
+        description: >
+          Flight Id defined in Kevel metadata.
+        type: string
+  amp:
+    type: event
+    description: >
+      Captures specific AMP fields.
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-355
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    notification_emails:
+      - gleonard@mozilla.com
+    expires: never
+
 technical_operations:
   user_agent:
     type: string
@@ -252,6 +295,7 @@ technical_operations:
       analytics value.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
@@ -271,6 +315,7 @@ technical_operations:
       differ by milliseconds. Should not be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
       - request-stats
     notification_emails:
@@ -291,6 +336,7 @@ technical_operations:
       two timestamps will differ by milliseconds. Should not be null.
     lifetime: application
     send_in_pings:
+      - events
       - interaction
     notification_emails:
       - gleonard@mozilla.com
