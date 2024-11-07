@@ -1,0 +1,31 @@
+# Any copyright is dedicated to the Public Domain.
+# https://creativecommons.org/publicdomain/zero/1.0/
+
+---
+# Schema
+$schema: moz://mozilla.org/schemas/glean/pings/2-0-0
+
+request-stats:
+  description: >
+    Request stats for calculating performance, such as addressable inventory
+    or fill rates
+  include_client_id: false
+  notification_emails:
+    - dmueller@mozilla.com
+  bugs:
+    - https://mozilla-hub.atlassian.net/browse/AE-577
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
+  data_reviews:
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
+
+interaction:
+  description: >
+    Ad interaction with an ad.
+  include_client_id: false
+  notification_emails:
+    - dmueller@mozilla.com
+  bugs:
+    - https://mozilla-hub.atlassian.net/browse/AE-577
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
+  data_reviews:
+    - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
