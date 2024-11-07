@@ -404,7 +404,7 @@ technical_operations:
     type: quantity
     unit: ads
     description: >
-      Number of ads filtered by the server, such as by applying a blocklist
+      Number of ads filtered by the server, from applying a blocklist
       for the user, for a placement
     lifetime: application
     send_in_pings:
