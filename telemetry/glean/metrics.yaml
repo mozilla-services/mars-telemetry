@@ -320,6 +320,40 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     expires: never
 
+  creative_id:
+    type: string
+    description: >
+      Advertiser/partner provided identifier for assets used in a specific ad.  May be null.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - gtan@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-860
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1968794
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1968794
+
+    expires: never
+
+  report_reason:
+    type: string
+    description: >
+      Reason selected by the user for reporting the ad
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - gtan@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-860
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1968794
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1968794
+
+    expires: never
+
   count_requested:
     type: quantity
     unit: ads
