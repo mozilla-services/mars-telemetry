@@ -1,7 +1,7 @@
 OUTPUT_DIR := build
 .DEFAULT_GOAL := translate
 
-.PHONY: lint translate
+.PHONY: lint translate help
 
 lint: ## lint the yaml files
 	@echo "Glinting..."
