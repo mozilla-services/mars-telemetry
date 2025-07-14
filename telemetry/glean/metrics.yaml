@@ -54,6 +54,22 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     expires: never
 
+  creative_id:
+    type: string
+    description: >
+      Advertiser/partner provided identifier for assets used in a specific ad.  May be null.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-959
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1977255
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1977255
+    expires: never
+
   provider:
     type: string
     description: >
@@ -155,6 +171,23 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  line_item_id:
+    type: string
+    description: >
+      Advertiser/partner provided identifier for the line item used in a specific ad.
+      Will be null for a Kevel supplied ad, use flight_id instead.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-959
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1977255
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1977255
     expires: never
 
 ad_client:
