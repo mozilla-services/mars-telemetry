@@ -190,6 +190,22 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1977255
     expires: never
 
+  internal_line_item_id:
+    type: string
+    description: >
+      Internally generated identifier mapped to the ad partner line item used for internal reporting.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-1002
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1984127
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=1984127
+    expires: never
+
 ad_client:
   context_id:
     type: string
