@@ -268,6 +268,7 @@ ad_client:
     send_in_pings:
       - interaction
       - request-stats
+      - ad-provider-request-stats
     notification_emails:
       - gleonard@mozilla.com
     bugs:
@@ -284,6 +285,7 @@ ad_client:
     lifetime: application
     send_in_pings:
       - interaction
+      - ad-provider-request-stats
     notification_emails:
       - gleonard@mozilla.com
     bugs:
@@ -291,6 +293,51 @@ ad_client:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    expires: never
+
+  country_code:
+    type: string
+    description: >
+      The client's country code.
+    lifetime: application
+    send_in_pings:
+      - ad-provider-request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    expires: never
+
+  region_code:
+    type: string
+    description: >
+      The client's region code.
+    lifetime: application
+    send_in_pings:
+      - ad-provider-request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    expires: never
+
+  dma_code:
+    type: string
+    description: >
+      The client's DMA code. May be null
+    lifetime: application
+    send_in_pings:
+      - ad-provider-request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
     expires: never
 
 technical_operations:
@@ -453,4 +500,114 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
+    expires: never
+
+provider:
+  name:
+    type: string
+    description: >
+      The name of the ad provider
+    lifetime: application
+    send_in_pings:
+      - ad-provider-request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    expires: never
+
+request:
+  count_requested:
+    type: quantity
+    unit: ads
+    description: >
+      The number of ads requested from the provider
+    lifetime: application
+    send_in_pings:
+      - ad-provider-request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    expires: never
+
+  count_returned:
+    type: quantity
+    unit: ads
+    description: >
+      The number of ads returned by the provider.
+    lifetime: application
+    send_in_pings:
+      - ad-provider-request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    expires: never
+
+  products_requested:
+    type: string_list
+    description: >
+      The type of ad requested. Possible values are from Shepherd's Canonical Mozilla Ad Products:
+      Tile, Native, Billboard, Rectangle, Skyscraper, Leaderboard.
+    lifetime: application
+    send_in_pings:
+      - ad-provider-request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    expires: never
+
+  ids_returned:
+    type: string_list
+    description: >
+      The ids of the creatives returned by the provider.
+    lifetime: application
+    send_in_pings:
+      - ad-provider-request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    expires: never
+
+  request_timestamp:
+    type: datetime
+    description:
+      The timestamp of the request to the provider.
+    lifetime: application
+    send_in_pings:
+      - ad-provider-request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    expires: never
+
+  response_timestamp:
+    type: datetime
+    description:
+      The timestamp of the response from the provider.
+    lifetime: application
+    send_in_pings:
+      - ad-provider-request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
     expires: never
