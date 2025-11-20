@@ -502,8 +502,8 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     expires: never
 
-provider:
-  name:
+provider_request:
+  provider:
     type: string
     description: >
       The name of the ad provider
@@ -518,7 +518,6 @@ provider:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=TODO
     expires: never
 
-request:
   count_requested:
     type: quantity
     unit: ads
