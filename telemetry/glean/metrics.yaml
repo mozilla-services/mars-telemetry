@@ -298,7 +298,8 @@ ad_client:
   country_code:
     type: string
     description: >
-      The client's country code.
+      Country code (ISO 3166-1 alpha-2 format) associated with the client when the ad was requested.
+      Should not be null.
     lifetime: application
     send_in_pings:
       - ad-provider-request-stats
@@ -313,7 +314,8 @@ ad_client:
   region_code:
     type: string
     description: >
-      The client's region code.
+      Region code (ISO 3166-2 format) associated with the client when the ad was requested.
+      May be null.
     lifetime: application
     send_in_pings:
       - ad-provider-request-stats
@@ -328,7 +330,8 @@ ad_client:
   dma_code:
     type: string
     description: >
-      The client's DMA code. May be null
+      Designated Marketing Area code (US only) associated with the client when the ad was requested.
+      May be null.
     lifetime: application
     send_in_pings:
       - ad-provider-request-stats
@@ -506,7 +509,8 @@ provider_request:
   provider:
     type: string
     description: >
-      The name of the ad provider
+      The external service providing the ad.
+      Should not be null.
     lifetime: application
     send_in_pings:
       - ad-provider-request-stats
@@ -522,7 +526,8 @@ provider_request:
     type: quantity
     unit: ads
     description: >
-      The number of ads requested from the provider
+      The number of ads requested from the provider.
+      Should not be null.
     lifetime: application
     send_in_pings:
       - ad-provider-request-stats
@@ -539,6 +544,7 @@ provider_request:
     unit: ads
     description: >
       The number of ads returned by the provider.
+      Should not be null.
     lifetime: application
     send_in_pings:
       - ad-provider-request-stats
@@ -553,8 +559,9 @@ provider_request:
   products_requested:
     type: string_list
     description: >
-      The type of ad requested. Possible values are from Shepherd's Canonical Mozilla Ad Products:
+      The type of ads requested from the provider. Possible values are from Shepherd's Canonical Mozilla Ad Products:
       Tile, Native, Billboard, Rectangle, Skyscraper, Leaderboard.
+      Should not be null.
     lifetime: application
     send_in_pings:
       - ad-provider-request-stats
@@ -569,7 +576,8 @@ provider_request:
   ids_returned:
     type: string_list
     description: >
-      The ids of the creatives returned by the provider.
+      The ids of the ads returned by the provider.
+      Should not be null.
     lifetime: application
     send_in_pings:
       - ad-provider-request-stats
@@ -584,7 +592,8 @@ provider_request:
   request_timestamp:
     type: datetime
     description:
-      The timestamp of the request to the provider.
+      The timestamp of the request to the ad provider.
+      Should not be null.
     lifetime: application
     send_in_pings:
       - ad-provider-request-stats
@@ -599,7 +608,8 @@ provider_request:
   response_timestamp:
     type: datetime
     description:
-      The timestamp of the response from the provider.
+      The timestamp of the response from the ad provider.
+      Should not be null.
     lifetime: application
     send_in_pings:
       - ad-provider-request-stats
