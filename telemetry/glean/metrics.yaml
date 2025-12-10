@@ -268,7 +268,7 @@ ad_client:
     send_in_pings:
       - interaction
       - request-stats
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - gleonard@mozilla.com
     bugs:
@@ -285,7 +285,7 @@ ad_client:
     lifetime: application
     send_in_pings:
       - interaction
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - gleonard@mozilla.com
     bugs:
@@ -302,7 +302,7 @@ ad_client:
       Should not be null.
     lifetime: application
     send_in_pings:
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -318,7 +318,7 @@ ad_client:
       May be null.
     lifetime: application
     send_in_pings:
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -334,7 +334,7 @@ ad_client:
       May be null.
     lifetime: application
     send_in_pings:
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -513,7 +513,7 @@ provider_request:
       Should not be null.
     lifetime: application
     send_in_pings:
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -530,7 +530,7 @@ provider_request:
       Should not be null.
     lifetime: application
     send_in_pings:
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -547,7 +547,7 @@ provider_request:
       Should not be null.
     lifetime: application
     send_in_pings:
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -564,7 +564,7 @@ provider_request:
       Should not be null.
     lifetime: application
     send_in_pings:
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -580,7 +580,7 @@ provider_request:
       Should not be null.
     lifetime: application
     send_in_pings:
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -596,7 +596,7 @@ provider_request:
       Should not be null.
     lifetime: application
     send_in_pings:
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -612,7 +612,7 @@ provider_request:
       Should not be null.
     lifetime: application
     send_in_pings:
-      - ad-provider-request-stats
+      - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:

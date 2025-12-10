@@ -30,7 +30,7 @@ interaction:
   data_reviews:
     - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
 
-ad-provider-request-stats:
+provider-request-stats:
   description: >
     Request stats for MARS interactions with third party services that provide ads.
   include_client_id: false
