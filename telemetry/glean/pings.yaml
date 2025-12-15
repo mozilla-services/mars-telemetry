@@ -39,4 +39,4 @@ provider-request-stats:
   bugs:
     - https://mozilla-hub.atlassian.net/browse/AE-1003
   data_reviews:
-    - https://bugzilla.mozilla.org/show_bug.cgi?id=2006154
+    - https://github.com/mozilla-services/mars-telemetry/pull/7
