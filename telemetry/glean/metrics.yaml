@@ -330,7 +330,7 @@ ad_client:
   dma_code:
     type: string
     description: >
-      Designated Marketing Area code (US only) associated with the client when the ad was requested. DMAs are pre-defined set of city or metro-level regions.
+      Designated Marketing Area code (US only) associated with the client when the ad was requested. DMAs are a pre-defined set of city or metro-level regions.
       May be null.
     lifetime: application
     send_in_pings:
