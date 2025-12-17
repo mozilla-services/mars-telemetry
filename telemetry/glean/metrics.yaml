@@ -311,6 +311,24 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     expires: never
 
+  firefox_version:
+    type: string
+    description: >
+      Version of the Firefox browser being used by the client. Used for error investigation only, no
+      analytics value.
+    lifetime: application
+    send_in_pings:
+      - interaction
+      - request-stats
+    notification_emails:
+      - gtan@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-1120
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2006440
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2006440
+    expires: never
+
   served_timestamp:
     type: datetime
     description: >
