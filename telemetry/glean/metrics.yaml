@@ -286,6 +286,7 @@ ad_client:
     send_in_pings:
       - interaction
       - provider-request-stats
+      - request-stats
     notification_emails:
       - gleonard@mozilla.com
     bugs:
@@ -304,6 +305,7 @@ ad_client:
     send_in_pings:
       - interaction
       - provider-request-stats
+      - request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -321,6 +323,7 @@ ad_client:
     send_in_pings:
       - interaction
       - provider-request-stats
+      - request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -338,6 +341,7 @@ ad_client:
     send_in_pings:
       - interaction
       - provider-request-stats
+      - request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
