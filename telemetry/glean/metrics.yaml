@@ -302,6 +302,7 @@ ad_client:
       Should not be null.
     lifetime: application
     send_in_pings:
+      - interaction
       - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
@@ -318,6 +319,7 @@ ad_client:
       May be null.
     lifetime: application
     send_in_pings:
+      - interaction
       - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
@@ -334,6 +336,7 @@ ad_client:
       May be null.
     lifetime: application
     send_in_pings:
+      - interaction
       - provider-request-stats
     notification_emails:
       - mlifshin@mozilla.com
