@@ -156,6 +156,23 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     expires: never
 
+  dma_code:
+    type: string
+    description: >
+      Designated Marketing Area code (US only) associated with the client when the ad was requested. DMAs are a pre-defined set of city or metro-level regions.
+      May be null.
+    lifetime: application
+    send_in_pings:
+      - interaction
+      - request-stats
+    notification_emails:
+      - mlifshin@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-1003
+    data_reviews:
+      - https://github.com/mozilla-services/mars-telemetry/pull/7
+    expires: never
+
   flight_id:
     type: string
     description: >
@@ -303,9 +320,7 @@ ad_client:
       Should not be null.
     lifetime: application
     send_in_pings:
-      - interaction
       - provider-request-stats
-      - request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -321,9 +336,7 @@ ad_client:
       May be null.
     lifetime: application
     send_in_pings:
-      - interaction
       - provider-request-stats
-      - request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
@@ -339,9 +352,7 @@ ad_client:
       May be null.
     lifetime: application
     send_in_pings:
-      - interaction
       - provider-request-stats
-      - request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
