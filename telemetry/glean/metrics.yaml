@@ -303,7 +303,6 @@ ad_client:
     send_in_pings:
       - interaction
       - provider-request-stats
-      - request-stats
     notification_emails:
       - gleonard@mozilla.com
     bugs:
