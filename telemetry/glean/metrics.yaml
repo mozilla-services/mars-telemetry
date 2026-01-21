@@ -168,9 +168,9 @@ ad:
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
-      - https://mozilla-hub.atlassian.net/browse/AE-1003
+      - https://mozilla-hub.atlassian.net/browse/AE-1142
     data_reviews:
-      - https://github.com/mozilla-services/mars-telemetry/pull/7
+      - https://github.com/mozilla-services/mars-telemetry/pull/9
     expires: never
 
   flight_id:
