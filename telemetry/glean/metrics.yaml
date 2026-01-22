@@ -20,6 +20,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   advertiser:
@@ -36,6 +37,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   id:
@@ -52,6 +54,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
   
   taxonomy:
@@ -102,6 +105,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1977255
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1977255
+    data_sensitivity: interaction
     expires: never
 
   provider:
@@ -118,6 +122,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   product:
@@ -135,6 +140,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   format:
@@ -152,6 +158,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   country_code:
@@ -170,6 +177,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   region_code:
@@ -189,6 +197,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   flight_id:
@@ -206,6 +215,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   line_item_id:
@@ -223,6 +233,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1977255
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1977255
+    data_sensitivity: interaction
     expires: never
 
   internal_line_item_id:
@@ -239,6 +250,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1984127
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1984127
+    data_sensitivity: interaction
     expires: never
 
   flags:
@@ -280,6 +292,7 @@ ad_client:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   placement:
@@ -298,6 +311,7 @@ ad_client:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   position:
@@ -315,6 +329,7 @@ ad_client:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   form_factor:
@@ -334,6 +349,7 @@ ad_client:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   os:
@@ -351,6 +367,7 @@ ad_client:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: interaction
     expires: never
 
   country_code:
@@ -367,6 +384,7 @@ ad_client:
       - https://mozilla-hub.atlassian.net/browse/AE-1003
     data_reviews:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
+    data_sensitivity: interaction
     expires: never
 
   region_code:
@@ -384,6 +402,7 @@ ad_client:
       - https://mozilla-hub.atlassian.net/browse/AE-1003
     data_reviews:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
+    data_sensitivity: interaction
     expires: never
 
   dma_code:
@@ -404,6 +423,7 @@ ad_client:
       - https://mozilla-hub.atlassian.net/browse/AE-1003
     data_reviews:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
+    data_sensitivity: interaction
     expires: never
 
 technical_operations:
@@ -422,6 +442,7 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: technical
     expires: never
 
   firefox_version:
@@ -440,6 +461,7 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=2006440
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=2006440
+    data_sensitivity: technical
     expires: never
 
   served_timestamp:
@@ -460,6 +482,7 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: technical
     expires: never
 
   fetched_timestamp:
@@ -479,6 +502,7 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
+    data_sensitivity: technical
     expires: never
 
   request_id:
@@ -498,6 +522,7 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
+    data_sensitivity: technical
     expires: never
 
   creative_id:
@@ -514,7 +539,7 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1968794
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1968794
-
+    data_sensitivity: technical
     expires: never
 
   report_reason:
@@ -531,7 +556,7 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1968794
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1968794
-
+    data_sensitivity: interaction
     expires: never
 
   count_requested:
@@ -549,6 +574,7 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
+    data_sensitivity: technical
     expires: never
 
   count_returned:
@@ -566,6 +592,7 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
+    data_sensitivity: technical
     expires: never
 
   count_filtered:
@@ -584,6 +611,7 @@ technical_operations:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1928158
+    data_sensitivity: technical
     expires: never
 
 provider_request:
@@ -601,6 +629,7 @@ provider_request:
       - https://mozilla-hub.atlassian.net/browse/AE-1003
     data_reviews:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
+    data_sensitivity: technical
     expires: never
 
   count_requested:
@@ -618,6 +647,7 @@ provider_request:
       - https://mozilla-hub.atlassian.net/browse/AE-1003
     data_reviews:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
+    data_sensitivity: technical
     expires: never
 
   count_returned:
@@ -635,6 +665,7 @@ provider_request:
       - https://mozilla-hub.atlassian.net/browse/AE-1003
     data_reviews:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
+    data_sensitivity: technical
     expires: never
 
   ids_returned:
@@ -651,6 +682,7 @@ provider_request:
       - https://mozilla-hub.atlassian.net/browse/AE-1003
     data_reviews:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
+    data_sensitivity: technical
     expires: never
 
   request_timestamp:
@@ -667,6 +699,7 @@ provider_request:
       - https://mozilla-hub.atlassian.net/browse/AE-1003
     data_reviews:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
+    data_sensitivity: technical
     expires: never
 
   response_timestamp:
@@ -683,5 +716,6 @@ provider_request:
       - https://mozilla-hub.atlassian.net/browse/AE-1003
     data_reviews:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
+    data_sensitivity: technical
     expires: never
   
