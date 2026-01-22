@@ -157,25 +157,6 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     expires: never
 
-  dma_code:
-    type: string
-    description: >
-      Designated Marketing Area code (US only) associated with the client when the ad was requested.
-      DMAs are a set of 210 city or metro-level US regions pre-defined by Nielsen.
-      DMAs are provided to MARS via MaxMind IP geolocation lookup.
-      May be null.
-    lifetime: application
-    send_in_pings:
-      - interaction
-      - request-stats
-    notification_emails:
-      - mlifshin@mozilla.com
-    bugs:
-      - https://mozilla-hub.atlassian.net/browse/AE-1142
-    data_reviews:
-      - https://github.com/mozilla-services/mars-telemetry/pull/9
-    expires: never
-
   flight_id:
     type: string
     description: >
@@ -357,7 +338,9 @@ ad_client:
       May be null.
     lifetime: application
     send_in_pings:
+      - interaction
       - provider-request-stats
+      - request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
