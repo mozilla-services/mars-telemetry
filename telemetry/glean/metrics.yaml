@@ -291,7 +291,7 @@ ad_client:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
-    data_sensitivity: interaction
+    data_sensitivity: technical
     expires: never
 
   os:
@@ -309,7 +309,7 @@ ad_client:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
-    data_sensitivity: interaction
+    data_sensitivity: technical
     expires: never
 
   country_code:
