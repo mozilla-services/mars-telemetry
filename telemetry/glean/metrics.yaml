@@ -123,7 +123,7 @@ ad:
   country_code:
     type: string
     description: >
-      Country code associated with the client when the ad was requested.
+      Country code (ISO 3166-1 alpha-2) associated with the client when the ad was requested.
       Should not be null.
     lifetime: application
     send_in_pings:
@@ -141,8 +141,9 @@ ad:
   region_code:
     type: string
     description: >
-      Region code associated with the client when the ad was requested.  May
-      be null.
+      Region code (ISO 3166-2 alpha-2) associated with the client when the ad was requested.
+      Region is also known as Subdivision 1.
+      May be null.
     lifetime: application
     send_in_pings:
       - interaction
@@ -298,7 +299,7 @@ ad_client:
   country_code:
     type: string
     description: >
-      Country code (ISO 3166-1 alpha-2 format) associated with the client when the ad was requested.
+      Country code (ISO 3166-1 alpha-2) associated with the client when the ad was requested.
       Should not be null.
     lifetime: application
     send_in_pings:
@@ -314,7 +315,8 @@ ad_client:
   region_code:
     type: string
     description: >
-      Region code (ISO 3166-2 format) associated with the client when the ad was requested.
+      Region code (ISO 3166-2 alpha-2) associated with the client when the ad was requested.
+      Region is also known as Subdivision 1.
       May be null.
     lifetime: application
     send_in_pings:
@@ -330,11 +332,15 @@ ad_client:
   dma_code:
     type: string
     description: >
-      Designated Marketing Area code (US only) associated with the client when the ad was requested. DMAs are a pre-defined set of city or metro-level regions.
+      Designated Marketing Area code (US only) associated with the client when the ad was requested.
+      DMAs are a set of 210 city or metro-level US regions pre-defined by Nielsen.
+      DMAs are provided to MARS via MaxMind IP geolocation lookup.
       May be null.
     lifetime: application
     send_in_pings:
+      - interaction
       - provider-request-stats
+      - request-stats
     notification_emails:
       - mlifshin@mozilla.com
     bugs:
