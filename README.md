@@ -10,7 +10,7 @@ Used by https://github.com/mozilla-services/mars
 
 [*Data Collection at Mozilla*](https://wiki.mozilla.org/Data_Collection)
 
-Making a change to our data collection practices requires additional review by one of our Data Stewards.
+Making changes to our data collection practices requires additional review by one of our Data Stewards.
 
 1. Submit your PR to `mars-telemetry` (but do **not** merge it yet!)
 2. Fill out a [data collection review form](https://github.com/mozilla/data-review/blob/main/request.md) ([examples](https://bugzilla.mozilla.org/show_bug.cgi?id=1900898) [here](https://bugzilla.mozilla.org/show_bug.cgi?id=2006440)).
