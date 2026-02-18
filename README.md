@@ -16,4 +16,4 @@ Making a change to our data collection practices requires additional review by o
 2. Fill out a [data collection review form](https://github.com/mozilla/data-review/blob/main/request.md) ([examples](https://bugzilla.mozilla.org/show_bug.cgi?id=1900898) [here](https://bugzilla.mozilla.org/show_bug.cgi?id=2006440)).
 3. Submit the request to Bugzilla.
 4. Include the proposed measurements table and a link to your Bugzilla request in your PR.
-5. Post your PR in [#data-stewardship-help](https://mozilla.enterprise.slack.com/archives/C07LMRQ5Q6B) for review (example [here](https://mozilla.slack.com/archives/C07LMRQ5Q6B/p1768960739288189)).
+5. Send a friendly message to [#data-stewardship-help](https://mozilla.enterprise.slack.com/archives/C07LMRQ5Q6B) to request a review. Make sure to give some brief context on the change, and include a link to the PR and Bugzilla request.
