@@ -14,6 +14,6 @@ Making a change to our data collection practices requires additional review by o
 
 1. Submit your PR to `mars-telemetry` (but do **not** merge it yet!)
 2. Fill out a [data collection review form](https://github.com/mozilla/data-review/blob/main/request.md) ([examples](https://bugzilla.mozilla.org/show_bug.cgi?id=1900898) [here](https://bugzilla.mozilla.org/show_bug.cgi?id=2006440)).
-3. Submit the request to bugzilla.
-4. Include the proposed measurements table in your PR.
+3. Submit the request to Bugzilla.
+4. Include the proposed measurements table and a link to your Bugzilla request in your PR.
 5. Post your PR in [#data-stewardship-help](https://mozilla.enterprise.slack.com/archives/C07LMRQ5Q6B) for review (example [here](https://mozilla.slack.com/archives/C07LMRQ5Q6B/p1768960739288189)).
