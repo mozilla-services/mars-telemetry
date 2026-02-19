@@ -630,7 +630,7 @@ provider_request:
   
   flags:
     type: object
-    description:
+    description: >
       The boolean state of all MARS experiment-backed feature flags
       at the time this ping was recorded.
     lifetime: application
