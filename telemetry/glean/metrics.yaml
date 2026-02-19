@@ -53,6 +53,40 @@ ad:
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     expires: never
+  
+  taxonomy:
+    type: string
+    description: >
+      Taxonomy identifier for the contextual categories (e.g. "IAB-3.0").
+      May be null if no contextual information was provided.
+    lifetime: application
+    send_in_pings:
+      - interaction
+      - request-stats
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-1184
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2017204
+    expires: never
+  
+  categories:
+    type: string_list
+    description: >
+      Comma-separated list of contextual category identifiers from the taxonomy
+      (e.g. "210,315"). May be null if no contextual information was provided.
+    lifetime: application
+    send_in_pings:
+      - interaction
+      - request-stats
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-1184
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2017204
+    expires: never
 
   creative_id:
     type: string
@@ -223,40 +257,6 @@ ad_client:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
-    expires: never
-  
-  taxonomy:
-    type: string
-    description: >
-      Taxonomy identifier for the contextual categories (e.g. "IAB-3.0").
-      May be null if no contextual information was provided.
-    lifetime: application
-    send_in_pings:
-      - interaction
-      - request-stats
-    notification_emails:
-      - ads-eng@mozilla.com
-    bugs:
-      - https://mozilla-hub.atlassian.net/browse/AE-1184
-    data_reviews:
-      - https://bugzilla.mozilla.org/show_bug.cgi?id=2017204
-    expires: never
-  
-  categories:
-    type: string
-    description: >
-      Comma-separated list of contextual category identifiers from the taxonomy
-      (e.g. "210,315"). May be null if no contextual information was provided.
-    lifetime: application
-    send_in_pings:
-      - interaction
-      - request-stats
-    notification_emails:
-      - ads-eng@mozilla.com
-    bugs:
-      - https://mozilla-hub.atlassian.net/browse/AE-1184
-    data_reviews:
-      - https://bugzilla.mozilla.org/show_bug.cgi?id=2017204
     expires: never
 
   placement:
