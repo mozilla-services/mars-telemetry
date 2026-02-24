@@ -4,6 +4,12 @@ Contains the metrics.yaml file documenting the metrics collected by the Unified 
 
 Used by https://github.com/mozilla-services/mars 
 
+## Additional Context for Data Stewards
+
+* The Unified API (MARS) uses Glean for **server-side** data collection.
+* Telemetry is collected through MARS to measure ad performance and effectiveness.
+* Users cannot opt out of specific metrics – data collection is tied to ad usage. Users who disable ads entirely have no ad-related telemetry collected.
+
 ## Making Changes to Collected Data
 
 > At Mozilla, like at many other organizations, we rely on data to make product decisions. But here, unlike many other organizations, we balance our goal of collecting useful, high-quality data with our goal to give users meaningful choice and control over their own data. The Mozilla data collection program was created to ensure we achieve both goals whenever we make a change to how we collect data in our products.
