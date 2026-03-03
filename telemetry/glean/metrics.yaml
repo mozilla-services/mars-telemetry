@@ -208,7 +208,7 @@ ad:
     expires: never
 
   flags:
-    type: object
+    type: labeled_boolean
     description: >
       The boolean state of all MARS experiment-backed feature flags
       at the time this ping was recorded.
@@ -224,11 +224,8 @@ ad:
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=2017878
     expires: never
-    structure:
-      type: object
-      properties:
-        sample_feature:
-          type: boolean
+    labels:
+      - sample_feature
 
 ad_client:
   context_id:
