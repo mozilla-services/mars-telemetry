@@ -241,6 +241,26 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1984127
     expires: never
 
+  flags:
+    type: labeled_boolean
+    description: >
+      The boolean state of all MARS experiment-backed feature flags
+      at the time this ping was recorded.
+    lifetime: application
+    send_in_pings:
+      - interaction
+      - request-stats    
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/AE-1221
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2017878
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2017878
+    expires: never
+    labels:
+      - sample_feature
+
 ad_client:
   context_id:
     type: string
@@ -661,3 +681,4 @@ provider_request:
     data_reviews:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
     expires: never
+  
