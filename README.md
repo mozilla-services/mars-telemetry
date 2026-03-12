@@ -63,7 +63,7 @@ Making changes to the metrics and pings in this repo requires review by a Data S
 2. Fill out a [data collection review form](https://github.com/mozilla/data-review/blob/main/request.md) ([examples](https://bugzilla.mozilla.org/show_bug.cgi?id=1900898) [here](https://bugzilla.mozilla.org/show_bug.cgi?id=2006440)).
 3. Submit the request to Bugzilla.
 4. Add a comment to your PR linking your Bugzilla request and a copy of your proposed measurements table (from the data collection review form).
-5. Send a friendly message to [#data-stewardship-help](https://mozilla.enterprise.slack.com/archives/C07LMRQ5Q6B) to request a review. Make sure to give some brief context on the change, and include a link to the PR and Bugzilla request.
+5. Send a friendly message to [#data-stewardship-help](https://mozilla.enterprise.slack.com/archives/C07LMRQ5Q6B) to request a review. Make sure to give some brief context on the change, and include a link to the PR and Bugzilla request. Also include a link to this `README.md` for our reviewer to reference if they need context or background on MARS data collection.
 
 ## Sensitive Data Review
 
