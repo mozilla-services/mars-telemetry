@@ -23,9 +23,9 @@ MARS is a stateless service and doesn't collect or store any data itself. The on
 
 ## Necessary data
 
-MARS needs to collect some anonymized, agreggated data about user interactions with ads in order to do business with our third party ad partners and advertisers, and for our financial record keeping. This is because we are paid based on these interactions, for example by how many times we show an ad, or by how many times an ad gets clicked. This is Category 2 "Interaction" data, captured via our [interaction ping](https://dictionary.telemetry.mozilla.org/apps/ads_backend/pings/interaction).
+MARS needs to collect some anonymized, aggregated data about user interactions with ads in order to do business with our third party ad partners and advertisers, and for our financial record keeping. This is because we are paid based on these interactions, for example by how many times we show an ad, or by how many times an ad gets clicked. This is Category 2 "Interaction" data, captured via our [interaction ping](https://dictionary.telemetry.mozilla.org/apps/ads_backend/pings/interaction).
 
-MARS also collects some anonymized, agreggated data to ensure our systems are functioning correctly and our third party partners are meeting their contractual obligations. This is Category 1 "Technical" data, captured via our [request-stats](https://dictionary.telemetry.mozilla.org/apps/ads_backend/pings/request-stats) and [provider-request-stats](https://dictionary.telemetry.mozilla.org/apps/ads_backend/pings/provider-request-stats) pings.
+MARS also collects some anonymized, aggregated data to ensure our systems are functioning correctly and our third party partners are meeting their contractual obligations. This is Category 1 "Technical" data, captured via our [request-stats](https://dictionary.telemetry.mozilla.org/apps/ads_backend/pings/request-stats) and [provider-request-stats](https://dictionary.telemetry.mozilla.org/apps/ads_backend/pings/provider-request-stats) pings.
 
 ## Server-side Glean
 
@@ -35,7 +35,7 @@ MARS's Glean integration is server-side, and all our pings are sent without any 
 
 At Mozilla we always give users meaningful choice and control over data collection. To opt-out of Mozilla Ads data collection, a user must opt out of ads entirely by going to Preferences > Home and unchecking "Support Firefox", or unchecking both "Sponsored shortcuts" and "Sponsored stories".
 
-This is because we invoice our third party ad partners and advertisers based on this data. So if we are showing ads, it is necessary to keep anonymized, agreggated data about user interactions with ads, for doing business and for our financial record keeping.
+This is because we invoice our third party ad partners and advertisers based on this data. So if we are showing ads, it is necessary to keep anonymized, aggregated data about user interactions with ads, for doing business and for our financial record keeping.
 
 ## Preventing Persistent Identifiers
 
