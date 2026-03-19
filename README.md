@@ -8,13 +8,13 @@ This repo contains the yaml files specifying the metrics collected by the Mozill
 
 # Background
 
-MARS is a backend API service that functions as a privacy-preserving proxy bewteen Firefox and third party ad providers.
+Commonly in the ads industry, client apps or websites make requests for ads directly to ad servers. These direct requests allows ad partners to see a wealth of information, which can be used by ad partners to learn who is the specific person using an app or site, and to build profiles about that person across many different apps and websites. The ads returned and shown also commonly contain tracking code that detects a person's activities and adds to their profile.
 
-MARS handles requests for ads from the Firefox browser, processes them to redact or anonymize our users' information, forwards along these anonymized requests to third party ad providers, and returns privacy-respecting, tracker-free ads to Firefox.
+MARS is a backend API service that prevents ad partners from gaining this kind of information. It functions as a privacy-preserving proxy bewteen Firefox clients and third party ad providers. MARS takes requests for ads from the Firefox browser, redacts or anonymizes any information that can be used to identify users or create profiles, forwards along these anonymized requests to third party ad providers, and returns privacy-respecting, tracker-free ads to Firefox.
 
 Some examples of these ads are the Sponsored Shortcuts and Sponsored Stories found on Firefox's Home and New Tab.
 
-An example of how MARS functions to preserve user privacy:
+An example of one way MARS functions to preserve user privacy:
 * Instead of passing the Firefox user's potentially fingerprintable User Agent string to ad partners, MARS sends along only the user's OS and whether they are on Desktop, Tablet, or Phone. The ad partner gets enough information to return an ad appropriate for the device, but has no way to identify, fingerprint, or track any user.
 
 # Data Collection in MARS with Glean
