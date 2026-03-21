@@ -8,7 +8,7 @@ This repo contains the yaml files specifying the metrics collected by the Mozill
 
 # Background
 
-Commonly in the ads industry, client apps or websites make requests for ads directly to ad servers. These direct requests allows ad partners to see a wealth of information, which can be used by ad partners to learn who is the specific person using an app or site, and to build profiles about that person across many different apps and websites. The ads returned and shown also commonly contain tracking code that detects a person's activities and adds to their profile.
+Commonly in the ads industry, client apps or websites make requests for ads directly to ad servers. These direct requests allows ad partners to see a wealth of information, which can be used to identify the specific person using an app or site, and to build profiles about that person across many different apps and sites. The ads returned and shown also commonly contain tracking code that detects that person's activities and adds to their profile.
 
 MARS is a backend API service that prevents ad partners from gaining this kind of information. It functions as a privacy-preserving proxy bewteen Firefox clients and third party ad providers. MARS takes requests for ads from the Firefox browser, redacts or anonymizes any information that can be used to identify users or create profiles, forwards along these anonymized requests to third party ad providers, and returns privacy-respecting, tracker-free ads to Firefox.
 
