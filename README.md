@@ -47,8 +47,6 @@ Clients of the MARS API are required to rotate their `ContextId`s at least every
 
 MARS is currently a stateless service, we do not store any data on the users' behalf, nor have any way to identify clients or users, aside from the ephemeral `ContextId` detailed above. The only data we store is the Category 1 and Category 2 data that we send in our Glean pings. This data is necessary to retain for our business purposes, so we do not provide a way for users to delete it.
 
-However, MARS does have a `/delete_user` endpoint set up, so if in the future we decided to store data on users' behalf, we have a mechanism ready that Firefox clients can use to give users the controls to delete their data. This mechanism would still only use `ContextId` as the ephemeral identifier. By design, MARS cannot identify all past data for a particular user, only data associated with `ContextId`s passed by the client. So in this hypothetical future we can also periodically delete all data associated with old `ContextId`s.
-
 # Making Changes to Collected Data
 
 > At Mozilla, like at many other organizations, we rely on data to make product decisions. But here, unlike many other organizations, we balance our goal of collecting useful, high-quality data with our goal to give users meaningful choice and control over their own data. The Mozilla data collection program was created to ensure we achieve both goals whenever we make a change to how we collect data in our products.
