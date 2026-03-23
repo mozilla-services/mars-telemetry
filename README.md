@@ -39,7 +39,7 @@ This is because we invoice our third party ad partners and advertisers based on 
 
 ## Preventing Persistent Identifiers
 
-Firefox clients that use MARS are required to send `ContextId`, a UUID, with their ad requests. The `ContextId` is used to enable features like users blocking specific ads they don't want to see again. The `ContextId` is one of the metrics we send in Glean pings and store under the `ad_client.` category.
+Firefox clients that use MARS are required to send `ContextId`, a UUID, with their ad requests. The `ContextId` is used to enable features like users blocking specific ads they don't want to see again. The `ContextId` is one of the metrics we send in Glean pings and store under the `ad_client.*` category.
 
 Clients of the MARS API are required to rotate their `ContextId`s at least every 3 days to prevent it from becoming a persistent identifier within our data warehouse.
 
@@ -61,7 +61,10 @@ Making changes to the metrics and pings in this repo requires review by a Data S
 2. Fill out a [data collection review form](https://github.com/mozilla/data-review/blob/main/request.md) ([examples](https://bugzilla.mozilla.org/show_bug.cgi?id=1900898) [here](https://bugzilla.mozilla.org/show_bug.cgi?id=2006440)).
 3. Submit the request to Bugzilla.
 4. Add a comment to your PR linking your Bugzilla request and a copy of your proposed measurements table (from the data collection review form).
-5. Send a friendly message to [#data-stewardship-help](https://mozilla.enterprise.slack.com/archives/C07LMRQ5Q6B) to request a review. Make sure to give some brief context on the change, and include a link to the PR and Bugzilla request. Also include a link to this `README.md` for our reviewer to reference if they need context or background on MARS data collection.
+5. Send a friendly message to [#data-stewardship-help](https://mozilla.enterprise.slack.com/archives/C07LMRQ5Q6B) to request a review. Make sure to: 
+    * Give some brief context on the change 
+    * Include a link to the PR and Bugzilla request 
+    * Include a link to this `README.md` for our reviewer to reference for background on MARS data collection.
 
 ## Sensitive Data Review
 
