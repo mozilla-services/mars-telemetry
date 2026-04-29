@@ -261,6 +261,7 @@ ad:
     labels:
       - sample_feature
       - contextual_placement
+      - request_stats
 
 ad_client:
   context_id:
