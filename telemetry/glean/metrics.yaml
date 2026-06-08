@@ -262,6 +262,7 @@ ad:
       - sample_feature
       - contextual_placement
       - request_stats
+      - telemetry_comparison
 
 ad_client:
   context_id:
