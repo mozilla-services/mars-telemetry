@@ -56,7 +56,7 @@ ad:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=1900898
     data_sensitivity: interaction
     expires: never
-  
+
   taxonomy:
     type: string
     description: >
@@ -72,8 +72,9 @@ ad:
       - https://mozilla-hub.atlassian.net/browse/AE-1184
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=2017204
+    data_sensitivity: technical
     expires: never
-  
+
   categories:
     type: string_list
     description: >
@@ -89,6 +90,7 @@ ad:
       - https://mozilla-hub.atlassian.net/browse/AE-1184
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=2017204
+    data_sensitivity: interaction
     expires: never
 
   creative_id:
@@ -261,7 +263,7 @@ ad:
     lifetime: application
     send_in_pings:
       - interaction
-      - request-stats    
+      - request-stats
     notification_emails:
       - ads-eng@mozilla.com
     bugs:
@@ -270,6 +272,7 @@ ad:
     data_reviews:
       - https://bugzilla.mozilla.org/show_bug.cgi?id=2017878
     expires: never
+    data_sensitivity: technical
     labels:
       - sample_feature
       - contextual_placement
@@ -718,4 +721,3 @@ provider_request:
       - https://github.com/mozilla-services/mars-telemetry/pull/7
     data_sensitivity: technical
     expires: never
-  
