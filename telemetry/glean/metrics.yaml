@@ -278,6 +278,7 @@ ad:
       - contextual_placement
       - request_stats
       - telemetry_comparison
+      - traffic_study_1
 
 ad_client:
   context_id:
