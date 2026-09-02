@@ -267,6 +267,8 @@ ad:
       - ads-eng@mozilla.com
     bugs:
       - https://mozilla-hub.atlassian.net/browse/CM-244
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2068778
     data_sensitivity: [interaction]
     expires: never
 
@@ -282,6 +284,8 @@ ad:
       - ads-eng@mozilla.com
     bugs:
       - https://mozilla-hub.atlassian.net/browse/CM-244
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2068778
     data_sensitivity: [interaction]
     expires: never
 
@@ -297,6 +301,8 @@ ad:
       - ads-eng@mozilla.com
     bugs:
       - https://mozilla-hub.atlassian.net/browse/CM-244
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2068778
     data_sensitivity: [interaction]
     expires: never
 
@@ -313,6 +319,8 @@ ad:
       - ads-eng@mozilla.com
     bugs:
       - https://mozilla-hub.atlassian.net/browse/CM-244
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2068778
     data_sensitivity: [interaction]
     expires: never
 
