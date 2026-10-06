@@ -255,6 +255,75 @@ ad:
     data_sensitivity: [interaction]
     expires: never
 
+  advertiser_id:
+    type: string
+    description: >
+      Identifier for the advertiser in the onboarding api.
+      May be null if the ad did not originate from onboarding.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/CM-244
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2068778
+    data_sensitivity: [interaction]
+    expires: never
+
+  campaign_id:
+    type: string
+    description: >
+      Identifier for the campaign in the onboarding api.
+      May be null if the ad did not originate from onboarding.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/CM-244
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2068778
+    data_sensitivity: [interaction]
+    expires: never
+
+  account_id:
+    type: string
+    description: >
+      Identifier for the account in the onboarding api that owns that the advertiser is associated with.
+      May be null if the ad did not originate from onboarding.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/CM-244
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2068778
+    data_sensitivity: [interaction]
+    expires: never
+
+  rate:
+    type: string
+    description: >
+      Rate configured for the ad set (called line item here) in the onboarding api.
+      May be null if the ad did not originate from
+      onboarding.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/CM-244
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2068778
+    data_sensitivity: [interaction]
+    expires: never
+
   flags:
     type: labeled_boolean
     description: >
