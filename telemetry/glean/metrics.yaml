@@ -348,6 +348,7 @@ ad:
       - request_stats
       - telemetry_comparison
       - traffic_study_1
+      - foreign_lang_feed
 
 ad_client:
   context_id:
