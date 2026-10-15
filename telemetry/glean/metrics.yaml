@@ -691,7 +691,7 @@ technical_operations:
   suspected_bot:
     type: string
     description: >
-      Why MARS flagged this interaction as suspected bot traffic, if it did.
+      Reason MARS flagged this interaction as suspected bot traffic (e.g. over_limit); empty if not flagged.
     lifetime: application
     send_in_pings:
       - interaction
