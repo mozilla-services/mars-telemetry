@@ -688,6 +688,22 @@ technical_operations:
     data_sensitivity: [technical]
     expires: never
 
+  suspected_bot:
+    type: string
+    description: >
+      Why MARS flagged this interaction as suspected bot traffic, if it did.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - gtan@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/SPONS-217
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2082461
+    data_sensitivity: [technical]
+    expires: never
+
 provider_request:
   provider:
     type: string
