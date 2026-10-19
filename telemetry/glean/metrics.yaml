@@ -349,6 +349,7 @@ ad:
       - telemetry_comparison
       - traffic_study_1
       - foreign_lang_feed
+      - relevant_shortcut
 
 ad_client:
   context_id:
