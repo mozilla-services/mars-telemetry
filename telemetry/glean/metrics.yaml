@@ -516,7 +516,7 @@ ad_client:
     bugs:
       - https://mozilla-hub.atlassian.net/browse/TILES-229
     data_reviews:
-      - https://github.com/mozilla-services/mars-telemetry/pull/TODO
+      - https://github.com/mozilla-services/mars-telemetry/pull/24
     notification_emails:
       - bbirdsong@mozilla.com
     data_sensitivity: [interaction]
