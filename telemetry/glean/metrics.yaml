@@ -327,7 +327,7 @@ ad:
   ad_version_id:
     type: string
     description: >
-      Version identifier for the ad in the onboarding api.
+      Version identifier for the ad in the Mozilla Ads API.
     lifetime: application
     send_in_pings:
       - interaction
@@ -343,7 +343,7 @@ ad:
   creative_version_id:
     type: string
     description: >
-      Version identifier for the creative in the onboarding api.
+      Version identifier for the creative in the Mozilla Ads API.
     lifetime: application
     send_in_pings:
       - interaction
@@ -359,7 +359,7 @@ ad:
   ad_set_version_id:
     type: string
     description: >
-      Version identifier for the ad set in the onboarding api.
+      Version identifier for the ad set in the Mozilla Ads API.
     lifetime: application
     send_in_pings:
       - interaction
@@ -375,7 +375,7 @@ ad:
   campaign_version_id:
     type: string
     description: >
-      Version identifier for the campaign in the onboarding api.
+      Version identifier for the campaign in the Mozilla Ads API.
     lifetime: application
     send_in_pings:
       - interaction
