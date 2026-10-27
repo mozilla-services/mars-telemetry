@@ -350,6 +350,10 @@ ad:
       - traffic_study_1
       - foreign_lang_feed
       - sponsored_top_site_scoring
+      - sponsored_top_site_scoring_1
+      - sponsored_top_site_scoring_2
+      - sponsored_top_site_scoring_3
+      - sponsored_top_site_scoring_4
 
 ad_client:
   context_id:
