@@ -324,6 +324,70 @@ ad:
     data_sensitivity: [interaction]
     expires: never
 
+  ad_version_id:
+    type: string
+    description: >
+      Version identifier for the ad in the Mozilla Ads API.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/CM-356
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2084687
+    data_sensitivity: [interaction]
+    expires: never
+
+  creative_version_id:
+    type: string
+    description: >
+      Version identifier for the creative in the Mozilla Ads API.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/CM-356
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2084687
+    data_sensitivity: [interaction]
+    expires: never
+
+  ad_set_version_id:
+    type: string
+    description: >
+      Version identifier for the ad set in the Mozilla Ads API.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/CM-356
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2084687
+    data_sensitivity: [interaction]
+    expires: never
+
+  campaign_version_id:
+    type: string
+    description: >
+      Version identifier for the campaign in the Mozilla Ads API.
+    lifetime: application
+    send_in_pings:
+      - interaction
+    notification_emails:
+      - ads-eng@mozilla.com
+    bugs:
+      - https://mozilla-hub.atlassian.net/browse/CM-356
+    data_reviews:
+      - https://bugzilla.mozilla.org/show_bug.cgi?id=2084687
+    data_sensitivity: [interaction]
+    expires: never
+
   flags:
     type: labeled_boolean
     description: >
